@@ -1,0 +1,59 @@
+@import "colors";
+.main {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6.25rem;
+}
+
+.slider {
+  width: 100%;
+  padding: 0;
+  height: 100%;
+  position: relative;
+  height: 600px; //depois é dinamic
+  margin-top: 50px;
+  .actions {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    .btn {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      color: $primary;
+      border: 0;
+      border-radius: 100px;
+      background-color: #edf2f78a;
+
+      z-index: 100;
+      &_left {
+        left: 6%;
+      }
+      &_right {
+        right: 6%;
+      }
+    }
+  }
+  .slides {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    overflow: hidden;
+    .slide {
+      position: absolute;
+      transition: all 300ms ease-in-out;
+    }
+  }
+}

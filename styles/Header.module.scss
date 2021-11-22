@@ -1,0 +1,43 @@
+.main {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .logo {
+    width: 100%;
+    max-width: 15rem;
+    margin: 1rem 0 6rem 1rem;
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+
+  .title {
+    font-family: Poppins;
+    font-weight: 600;
+    text-align: center;
+    font-size: 3rem;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .text {
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0;
+    max-width: 600px;
+    text-align: center;
+    line-height: 150%;
+  }
+
+  .img {
+    max-width: 987px;
+    max-height: auto;
+    width: 100%;
+    padding: 2rem;
+    margin: 2rem 0 2rem 0;
+  }
+}

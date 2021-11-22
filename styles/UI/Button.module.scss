@@ -1,0 +1,54 @@
+@import "../colors";
+
+.btn {
+  border: 0;
+  background-color: $primary;
+  color: $white;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 6.25rem;
+  height: 2.5rem;
+  padding: 0.625rem 1.5rem 0.625rem 1.5rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 200ms ease-in-out;
+  user-select: none;
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: $secundary;
+    z-index: -1;
+    transition: width 400ms ease-in-out;
+  }
+
+  &:hover {
+    color: #fff;
+    &:after {
+      width: 120%;
+    }
+  }
+
+  &:active {
+    &:after {
+      background: $terciary;
+    }
+  }
+  &:focus {
+    &:after {
+      background: $terciary;
+    }
+  }
+}
