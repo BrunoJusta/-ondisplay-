@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { ContactsForm, Footer, Waves } from "../components";
-import home from "../styles/home.module.scss";
 export default function Home() {
   return (
     <div>
