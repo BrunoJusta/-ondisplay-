@@ -8,7 +8,7 @@ import {
   MiddleSection,
   Waves,
 } from "../components";
-import home from "../styles/home.module.scss";
+import home from "../styles/Home.module.scss";
 export default function Home() {
   return (
     <div style={{ width: "100%", display: "flex", flexDirection: "column" }}>
