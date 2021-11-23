@@ -79,15 +79,17 @@ const FeaturesMobile = (props) => {
       console.log(s.element.getBoundingClientRect().x);
       const previousX = getTranslateX(s.element);
       console.log("previous", previousX);
-      if (previousX > offset + slidesWidth / count) {
+      if (previousX > -offset + slidesWidth / count) {
         tempZIndex = "0";
         s.element.style.zIndex = "0";
       } else {
         tempZIndex = "30";
         s.element.style.zIndex = "30";
       }
-      if (previousX + movement > slidesWidth + offset) {
-        s.element.style.transform = `translate3d(${offset}px ,0px, ${tempZIndex}px)`;
+      if (previousX + movement > slidesWidth - offset) {
+        console.log("este" + previousX);
+
+        s.element.style.transform = `translate3d(${-offset}px ,0px, ${tempZIndex}px)`;
       } else {
         s.element.style.transform = `translate3d(${
           previousX + movement
