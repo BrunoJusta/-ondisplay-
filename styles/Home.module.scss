@@ -30,8 +30,9 @@
 
 @media only screen and (max-width: 1000px) {
   .waves {
-    width: auto;
-    min-height: 600px;
+    width: 100%;
+    min-height: 550px;
+    object-fit: cover;
   }
 }
 

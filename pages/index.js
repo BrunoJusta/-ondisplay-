@@ -17,7 +17,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Waves />
-      <div className="centerColumn">
+      <div
+        className="centerColumn"
+        style={{
+          padding: "2rem",
+        }}
+      >
         <Header />
         <MiddleSection />
         <Features />

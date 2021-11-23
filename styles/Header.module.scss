@@ -32,4 +32,10 @@
     padding: 2rem;
     margin: 2rem 0 2rem 0;
   }
+
+  @media only screen and (max-width: 1000px) {
+    .title {
+      font-size: 2rem;
+    }
+  }
 }
