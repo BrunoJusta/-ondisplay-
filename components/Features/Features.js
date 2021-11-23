@@ -49,9 +49,7 @@ const Features = (props) => {
       (slidesRefChilds[0].getBoundingClientRect().width + gap) * count + gap
     );
     setOffset(Math.abs((sliderWidth - slidesWidth + gap * (count - 1)) / 2));
-    // setOffset(+gap * count);
 
-    // console.log(slidesWidth);
     setMovement(slidesRefChilds[0].getBoundingClientRect().width + gap);
 
     let tempSlides = [];
@@ -74,10 +72,7 @@ const Features = (props) => {
     slides.forEach((s, index) => {
       let tempZIndex;
 
-      console.log(slidesWidth);
-      console.log(s.element.getBoundingClientRect().x);
       const previousX = getTranslateX(s.element);
-      console.log("previous", previousX);
       if (previousX > offset + slidesWidth / count) {
         tempZIndex = "0";
         s.element.style.zIndex = "0";
