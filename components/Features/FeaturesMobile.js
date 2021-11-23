@@ -48,15 +48,16 @@ const FeaturesMobile = (props) => {
     setSlidesWidth(
       (slidesRefChilds[0].getBoundingClientRect().width + gap) * count + gap
     );
-    // setOffset(Math.abs((sliderWidth - slidesWidth + gap * (count - 1)) / 2));
-    setOffset(+gap * count);
+    setOffset(Math.abs((sliderWidth - slidesWidth + gap * (count - 1)) / 2));
+    // setOffset(+gap * count);
 
     // console.log(slidesWidth);
     setMovement(slidesRefChilds[0].getBoundingClientRect().width + gap);
 
     let tempSlides = [];
     slidesRefChilds.forEach((s, index) => {
-      const posX = (s.getBoundingClientRect().width + gap) * index + offset;
+      const posX =
+        (s.getBoundingClientRect().width + gap) * index - offset - 15;
       const tempZIndex = index == 1 ? "30" : "0";
       index == 1 ? (s.style.zIndex = "30") : "0";
       // s.style.transformOrigin = "center";
