@@ -11,10 +11,6 @@
   max-width: 400px;
   max-height: 290px;
   margin: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   transition: all 200ms ease-in-out;
 
   &:hover {
@@ -22,12 +18,9 @@
   }
 
   .cardText {
-    font-family: Poppins;
-    font-style: normal;
     font-weight: 500;
     font-size: 1.5rem;
     text-align: center;
-    color: $primary;
     margin-top: 1rem;
   }
 }

@@ -61,10 +61,10 @@ const ContactsForm = (props) => {
     console.log(data);
   };
   return (
-    <div className={contactsForm.container}>
+    <div className={`${contactsForm.container} centerRow`}>
       <div className={contactsForm.card}>
         <Title text="Fale Connosco" />
-        <p className={contactsForm.cardText}>
+        <p className={`${contactsForm.cardText} text`}>
           Quer saber mais sobre a nossa solução, ou pretende uma solução
           personalizada, contacte-nos pelo formulário ou envie um email para
           <b>info@willbe.co</b>

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import details from "../styles/Details.module.scss";
-import { ContactsArea, DetailsSection, IconButton, Title } from "../components";
+import { Footer, DetailsSection, IconButton, Title } from "../components";
 
 export default function Home(props) {
   return (
@@ -27,7 +27,7 @@ export default function Home(props) {
         <IconButton text="Retalho" img="./retalho.png" url="/retalho" />
         <IconButton text="Saúde" img="./saude.png" url="/saude" />
       </div>
-      <ContactsArea />
+      <Footer form={false} />
     </div>
   );
 }

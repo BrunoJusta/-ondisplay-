@@ -8,4 +8,11 @@
   color: $primary;
   margin-bottom: 30px;
   max-width: 1000px;
+  line-height: 130%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .title {
+    font-size: 2.5rem;
+  }
 }

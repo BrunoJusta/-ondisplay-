@@ -1,3 +1,4 @@
+import home from "../../styles/Home.module.scss";
 const Waves = (props) => {
   const { maxHeight } = props;
 
@@ -10,7 +11,8 @@ const Waves = (props) => {
         zIndex: -100,
       }}
     >
-      <svg
+      <img src="./waves.png" className={home.waves} />
+      {/* <svg
         viewBox="0 0 1440 702"
         width="100vw"
         height="100%"
@@ -36,7 +38,7 @@ const Waves = (props) => {
             <stop offset="1" stopColor="#172639" />
           </linearGradient>
         </defs>
-      </svg>
+      </svg> */}
     </div>
   );
 };

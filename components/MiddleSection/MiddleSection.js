@@ -4,8 +4,8 @@ import Image from "next/dist/client/image";
 
 const MiddleSection = (props) => {
   return (
-    <div className={middleSection.main}>
-      <div className={middleSection.goal}>
+    <div className={`${middleSection.main} centerColumn`}>
+      <div className={`${middleSection.goal} centerColumn`}>
         <MiniTitle text="como ajudamos?" />
         <Title text="Facilitamos o processo de criação dos seus ecrãs" />
         <div className={middleSection.cardContainer}>

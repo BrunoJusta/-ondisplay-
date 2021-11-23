@@ -2,62 +2,81 @@
 
 .main {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  min-height: 100%;
   position: relative;
+  padding-bottom: calc(400px + 6rem);
+  align-items: flex-start;
 }
 
 .banner {
-  position: absolute;
-  z-index: -10;
-  top: 0;
-  left: 0;
-  max-height: 600px;
+  max-height: 700px;
   width: 100%;
   object-fit: cover;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -10;
+}
+
+.logo {
+  width: 15rem;
+  margin: 2em 0 0 2rem;
+  cursor: pointer;
 }
 
 .content {
   width: 80vw;
   max-width: 1440px;
-
+  align-self: center;
   background-color: #fff;
+  transform: translateY(400px);
   border: 0;
   border-radius: 20px;
-  margin-top: 400px;
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1),
     0px 4px 6px -2px rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-bottom: 200px;
-  padding: 4rem;
-}
 
-.logo {
-  width: 100%;
-  max-width: 15rem;
-  margin: 2em 0 0 2rem;
-  justify-self: flex-start;
-  align-self: flex-start;
-  cursor: pointer;
-}
+  .contentLeft {
+    width: 100%;
+    border: 0;
+    border-radius: 20px 0 0 20px;
+    padding: 3rem;
+    align-items: flex-start;
+    justify-content: flex-start;
 
-.icon {
-  width: 120px;
-}
+    .contentTitle {
+      padding-bottom: 1rem;
 
-.text {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 150%;
-  color: $primary;
-  margin-bottom: 3.125rem;
+      .icon {
+        width: 100px;
+      }
+    }
+  }
+
+  .contentRight {
+    width: 100%;
+    border: 0;
+    border-radius: 0 20px 20px 0;
+    background-color: $gray;
+    padding: 3rem;
+    align-items: flex-start;
+    justify-content: center;
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .item {
+      margin-bottom: 1rem;
+    }
+
+    .dots {
+      width: 20px;
+      margin-right: 8px;
+      color: $secundary;
+    }
+  }
 }
 
 .detailsArea {
@@ -81,21 +100,12 @@
   .detailsArea {
     flex-direction: column;
   }
-}
 
-.item {
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 150%;
-  color: $primary;
-  margin-bottom: 1rem;
-  display: flex;
-  align-items: center;
-}
+  .content {
+    flex-direction: column;
 
-.dots {
-  margin-right: 1rem;
-  color: $secundary;
+    .contentRight {
+      border-radius: 0 0 20px 20px;
+    }
+  }
 }

@@ -1,6 +1,6 @@
 import Head from "next/head";
 import details from "../styles/Details.module.scss";
-import { ContactsArea, DetailsSection, IconButton, Title } from "../components";
+import { Footer, DetailsSection, IconButton, Title } from "../components";
 
 export default function Home(props) {
   return (
@@ -11,14 +11,15 @@ export default function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <DetailsSection
-        icon="./hotel.svg"
-        text="wowowowowowowo"
+        icon="./bags.svg"
+        text="O Retalho é um setor em constante mudança, os consumidores a definem-se cada vez mais pela experiência e estilo de vida que pela posse de bens. Com as tendências de consumo cada vez mais exigentes e a evolução exponencial da tecnologia o Ondisplay é a solução ideal."
         backImg="./hotelaria.jpg"
         title="Retalho"
         items={[
-          " apresentar e atualizar conteúdos;",
-          " otimizar a comunicação no setor;",
-          " responder às demandas da sociedade moderna.",
+          "coerência de conteúdos nos diversos espaços;",
+          "diferentes ecrãs no mesmo espaço;",
+          "edição personalizada em tempo real;",
+          "adaptável às necessidades dos clientes.",
         ]}
       />
       <Title text="Descobrir mais setores" font="2" />
@@ -31,7 +32,7 @@ export default function Home(props) {
         />
         <IconButton text="Saúde" img="./saude.png" url="/saude" />
       </div>
-      <ContactsArea />
+      <Footer form={false} />
     </div>
   );
 }

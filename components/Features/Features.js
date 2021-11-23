@@ -48,8 +48,8 @@ const Features = (props) => {
     setSlidesWidth(
       (slidesRefChilds[0].getBoundingClientRect().width + gap) * count + gap
     );
-    // setOffset(Math.abs((sliderWidth - slidesWidth + gap * (count - 1)) / 2));
-    setOffset(+gap * count);
+    setOffset(Math.abs((sliderWidth - slidesWidth + gap * (count - 1)) / 2));
+    // setOffset(+gap * count);
 
     // console.log(slidesWidth);
     setMovement(slidesRefChilds[0].getBoundingClientRect().width + gap);
@@ -96,7 +96,7 @@ const Features = (props) => {
   };
 
   return (
-    <div className={features.main}>
+    <div className={`${features.main} centerColumn`}>
       <MiniTitle text="como utilizar?" />
       <Title text="Funcionalidades" />
       <div className={features.slider} ref={sliderRef}>
