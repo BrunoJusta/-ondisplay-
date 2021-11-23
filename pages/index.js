@@ -1,5 +1,12 @@
 import Head from "next/head";
-import { Features, Footer, Header, MiddleSection, Waves } from "../components";
+import {
+  Features,
+  FeaturesMobile,
+  Footer,
+  Header,
+  MiddleSection,
+  Waves,
+} from "../components";
 import home from "../styles/Home.module.scss";
 export default function Home() {
   return (
@@ -20,12 +27,13 @@ export default function Home() {
       <div
         className="centerColumn"
         style={{
-          padding: "2rem",
+          margin: "2rem",
         }}
       >
         <Header />
         <MiddleSection />
         <Features />
+        <FeaturesMobile />
       </div>
       <Footer form={false} />
     </div>
