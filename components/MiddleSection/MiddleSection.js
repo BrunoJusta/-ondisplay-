@@ -17,14 +17,10 @@ const MiddleSection = (props) => {
         <MiniTitle text="áreas de atuação" />
         <Title text="Ideial para todo o tipo de setores" />
         <div className={middleSection.cardContainer}>
-          <IconButton
-            text="restauração"
-            img="/restauracao.png"
-            url="/restauracao"
-          />
-          <IconButton text="hotelaria" img="/hotelaria.png" url="hotelaria" />
-          <IconButton text="saúde" img="/saude.png" url="saude" />
-          <IconButton text="retalho" img="/retalho.png" url="retalho" />
+          <IconButton text="restauração" img="/restauracao.png" />
+          <IconButton text="hotelaria" img="/hotelaria.png" />
+          <IconButton text="saúde" img="/saude.png" />
+          <IconButton text="retalho" img="/retalho.png" />
         </div>
       </div>
     </div>
